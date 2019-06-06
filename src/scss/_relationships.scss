@@ -1,0 +1,43 @@
+.relationships {
+    height: 585px;
+    display: flex;
+    justify-content: center;
+
+    &__container {
+        width: 930px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__headliner {
+        font: 600 42px/1.2 'Overpass', sans-serif;
+        text-align: center;
+        width: 550px;
+        padding-top: 16px;
+    }
+
+    &__blocks {
+        width: 930px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__block1,
+    &__block2,
+    &__block3 {
+        width: 290px;
+        padding-top: 45px;
+    }
+
+    &__secondHeadliner {
+        font: 600 26px 'Overpass', sans-serif;
+        padding-top: 20px;
+    }
+
+    &__paragraph {
+        font: 16px/1.4 'Source Sans Pro', sans-serif;
+        padding: 5px 0 0 3px;
+        width: 282px;
+    }
+}

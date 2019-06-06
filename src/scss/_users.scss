@@ -1,0 +1,79 @@
+.users {
+    display: flex;
+    justify-content: center;
+
+    &__headliner {
+        text-align: center;
+        font: 600 42px 'Overpass', sans-serif;
+        padding-top: 135px;
+    }
+
+    &__headliner4 {
+        text-align: center;
+        font: 600 18px 'Source Sans Pro', sans-serif;
+        padding-top: 8px;
+    }
+
+    &__content {
+        width: 930px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding-top: 60px;
+    }
+
+    &__user {
+        width: 290px;
+        display: flex;
+        align-items: flex-start;
+        padding-bottom: 62px;
+    }
+
+    &__avatar {
+        border-radius: 50%;
+        width: 70px;
+        margin-right: 8px;
+    }
+
+    &__headliner2 {
+        font: 700 22px/1.2 'Overpass', sans-serif;
+        padding-top: 24px;
+    }
+
+    &__position {
+        font: 13px/1.3 'Overpass', sans-serif;
+        padding: 11px 0 0 2px;
+        margin-block-end: 0;
+    }
+
+    &__email {
+        font: 14px/1.2 'Source Sans Pro', sans-serif;
+        padding: 3px 0 0 2px;
+        margin-block-end: 0;
+    }
+
+    &__phone {
+        font: 14px/1.2 'Source Sans Pro', sans-serif;
+        padding: 3px 0 0 2px;
+        margin-block-end: 0;
+    }
+
+    &__button-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    &__button {
+        background-color: white;
+        border: 2px solid $mainOrangeColor;
+        border-radius: 5px;
+        color: $mainOrangeColor;
+        width: 290px;
+        height: 40px;
+        padding-bottom: 2px;
+        margin-top: -10px;
+        font: 600 20px 'Source Sans Pro', sans-serif;
+    }
+}

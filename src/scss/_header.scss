@@ -1,0 +1,68 @@
+.toolbar {
+    @include displayFlexCenter();
+    background-color: #fff;
+    height: 65px;
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+    left: 50%;
+    transform: translate(-50%, 0);
+
+    &__container {
+      @include displayFlexBetween();
+      width: 930px;
+    }
+
+    &__logo {
+      width: 135px;
+      margin-right: 25px;
+    }
+
+    &__nav {
+      @include displayFlexBetween();
+      width: 455px;
+      padding-bottom: 5px;
+
+    }
+
+.nav__link {
+    font: 16px 'Source Sans Pro', sans-serif;
+}
+
+  .user {
+    @include displayFlexBetween();
+
+    &__text {
+      width: 140px;
+    }
+
+    &__name,
+    &__email {
+      font: 12px 'Overpass', sans-serif;
+      margin-bottom: 0;
+      text-align: right;
+    }
+
+    &__email {
+      color: $emailColor;
+      font: 400 11px 'Overpass', sans-serif;
+    }
+
+    &__images {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 80px;
+      margin-left: 15px;
+    }
+
+    &__avatar {
+      width: 40px;
+      border-radius: 50%;
+    }
+
+    &__signout {
+      width: 25px;
+    }
+  }
+}

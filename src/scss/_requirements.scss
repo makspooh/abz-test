@@ -1,0 +1,43 @@
+.requirements {
+    display: flex;
+    justify-content: center;
+    background-image: url('../assets/imgs/bg-2.jpg');
+    background-size: cover;
+    height: 755px;
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 930px;
+    }
+
+    &__headliner {
+        font: 600 42px 'Overpass', sans-serif;
+        color: white;
+        padding-top: 135px;
+    }
+
+    &__content {
+        width: 930px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding-top: 50px;
+    }
+
+    &__text {
+        margin-top: -15px;
+    }
+
+    &__paragraph {
+        font: 16px/1.4 'Source Sans Pro', sans-serif;
+        width: 450px;
+        color: white;
+        margin-bottom: 24px;
+    }
+
+    &__paragraph:nth-child(2) {
+        margin-bottom: 20px;
+    }
+}

@@ -2,20 +2,29 @@
   <div id="app">
     <app-header/>
     <sign-up/>
-    <lets-get/>
+    <about/>
+    <relationships/>
+    <requirements/>
+    <users/>
   </div>
 </template>
 
 <script>
 import AppHeader from './components/AppHeader'
 import SignUp from './components/SignUp'
-import LetsGet from './components/LetsGet'
+import About from './components/About'
+import Relationships from './components/Relationships'
+import Requirements from './components/Requirements'
+import Users from './components/Users'
 
 export default {
   components: {
     AppHeader,
     SignUp,
-    LetsGet
+    About,
+    Relationships,
+    Requirements,
+    Users
   },
   data () {
     return {}

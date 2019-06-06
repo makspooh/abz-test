@@ -1,0 +1,27 @@
+@mixin displayFlexCenter() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+@mixin displayFlexBetween() {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+  
+@mixin displayFlexAround() {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+@mixin fontStylesOverpass() {
+    color: white;
+    font-family: 'Overpass', sans-serif;
+}
+
+@mixin fontStylesSource() {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: white;
+}

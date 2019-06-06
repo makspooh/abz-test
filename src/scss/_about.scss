@@ -1,0 +1,47 @@
+.about {
+    display: flex;
+    justify-content: center;
+    height: 600px;
+
+    &__container {
+        width: 930px;
+    }
+
+    &__headliner {
+        font: 42px 'Overpass', sans-serif;
+        text-align: center;
+        padding-top: 132px;
+    }
+}
+
+.content {
+    display: flex;
+
+    &__text {
+        padding-left: 31px;
+        padding-top: 41px;
+    }
+
+    &__image-container {
+        padding-top: 22px;
+        padding-left: 1px;
+    }
+
+    &__headliner {
+        font: 600 26px 'Overpass', sans-serif;
+    }
+
+    &__paragraph {
+        font: 400 15px/1.5 'Overpass', sans-serif;
+        color: $paragraphGrey;
+        padding-top: 7px;
+        width: 620px;
+    }
+
+    &__link {
+        text-decoration: none;
+        font: 600 22px 'Source Sans Pro', sans-serif;
+        color: $mainOrangeColor;
+        margin-top: -2px;
+    }
+}
