@@ -1,30 +1,36 @@
 <template>
-  <div id="app">
-    <app-header/>
-    <sign-up/>
-    <about/>
-    <relationships/>
-    <requirements/>
-    <users/>
-  </div>
+  <v-app>
+    <v-content>
+      <app-header/>
+      <banner/>
+      <about/>
+      <relationships/>
+      <requirements/>
+      <users/>
+      <sign-up/>
+    </v-content>
+  </v-app>
 </template>
 
 <script>
 import AppHeader from './components/AppHeader'
-import SignUp from './components/SignUp'
+import Banner from './components/Banner'
 import About from './components/About'
 import Relationships from './components/Relationships'
 import Requirements from './components/Requirements'
 import Users from './components/Users'
+import SignUp from './components/SignUp'
 
 export default {
+  name: 'App',
   components: {
     AppHeader,
-    SignUp,
+    Banner,
     About,
     Relationships,
     Requirements,
-    Users
+    Users,
+    SignUp
   },
   data () {
     return {}
