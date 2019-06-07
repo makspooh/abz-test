@@ -1,6 +1,7 @@
 .signup {
     display: flex;
     justify-content: center;
+    background-color: #fff;
 
     &__container {
         width: 930px;
@@ -23,12 +24,35 @@
 
 .form {
     width: 930px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
     &__first-line {
         width: 930px;
         display: flex;
         justify-content: space-between;
-        padding-top: 63px;
+        align-items: flex-start;
+        padding-top: 62px;
+        position: relative;
+    }
+
+    &__img-phone {
+        position: absolute;
+        right: 236px;
+        top: 54px;
+    }
+
+    &__img-email {
+        position: absolute;
+        right: 559px;
+        top: 54px;
+    }
+
+    &__img-name {
+        position: absolute;
+        left: 14px;
+        top: 54px;
     }
 
     &__name,
@@ -36,10 +60,73 @@
     &__phone {
         border: 1px solid $formBorderGrey;
         width: 290px;
+        color: $formTextColor;
+        @include inputDefaultStyles();
+    }
+
+    &__secondline {
+        width: 930px;
+        display: flex;
+        justify-content: space-between;
+        padding-top: 40px;
+    }
+
+    &__position {
+        @include inputDefaultStyles();
+        width: 450px;
+        color: black;
+        background-image: url('../assets/icons/caret-down.svg');
+        background-position-x: 95.7%;
+        background-position-y: 50%;
+    }
+    
+    &__file {
+        display: none;
+    }
+
+    &__input-block {
+        width: 450px;
         height: 56px;
-        border-radius: 3px;
-        padding-left: 16px;
+        display: flex;
+    }
+
+    &__filename {
         font: 16px 'Source Sans Pro', sans-serif;
         color: $formTextColor;
+        border: 1px solid $formBorderGrey;
+        border-right: none;
+        padding: 16px 0 0 17px;
+        width: 325px;
+        border-top-left-radius: 4px;
+        border-bottom-left-radius: 4px;
+    }
+
+    &__label {
+        font: 700 20px 'Source Sans Pro', sans-serif;
+        color: $mainOrangeColor;
+        border: 2px solid $mainOrangeColor;
+        max-width: 80%;
+        cursor: pointer;
+        width: 130px;
+        border-top-right-radius: 4px;
+        border-bottom-right-radius: 4px;
+        padding: 13px 0 0 31px;
+    }
+
+    &__submit {
+        font: 900 20px 'Source Sans Pro', sans-serif;
+        width: 290px;
+        height: 40px;
+        background-color: $signUpButtonBgCol;
+        margin-top: 25px;
+        padding-bottom: 3px;
+        border-radius: 4px;
+        color: $signUpButtonColor;
+    }
+
+    &__file-description {
+        font: 12px 'Source Sans Pro', sans-serif;
+        padding: 4px 0 0 18px;
+        color: #959494;
     }
 }

@@ -39,14 +39,21 @@
 
     &__name,
     &__email {
-      font: 12px 'Overpass', sans-serif;
+      font: 14px 'Source Sans Pro', sans-serif;
       margin-bottom: 0;
       text-align: right;
     }
 
+    &__name {
+      padding-bottom: 1px;
+      padding-left: 87px;
+    }
+
     &__email {
       color: $emailColor;
-      font: 400 11px 'Overpass', sans-serif;
+      font-size: 12px;
+      padding-bottom: 5px;
+      padding-left: 30px;
     }
 
     &__images {

@@ -1,15 +1,14 @@
 <template>
-  <v-app>
-    <v-content>
-      <app-header/>
-      <banner/>
-      <about/>
-      <relationships/>
-      <requirements/>
-      <users/>
-      <sign-up/>
-    </v-content>
-  </v-app>
+  <div id="app">
+    <app-header/>
+    <banner/>
+    <about/>
+    <relationships/>
+    <requirements/>
+    <users/>
+    <sign-up/>
+    <app-footer/>
+  </div>
 </template>
 
 <script>
@@ -20,6 +19,7 @@ import Relationships from './components/Relationships'
 import Requirements from './components/Requirements'
 import Users from './components/Users'
 import SignUp from './components/SignUp'
+import AppFooter from './components/AppFooter'
 
 export default {
   name: 'App',
@@ -30,7 +30,8 @@ export default {
     Relationships,
     Requirements,
     Users,
-    SignUp
+    SignUp,
+    AppFooter
   },
   data () {
     return {}
