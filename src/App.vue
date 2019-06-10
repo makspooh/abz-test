@@ -12,14 +12,14 @@
 </template>
 
 <script>
-import AppHeader from './components/AppHeader'
+import AppHeader from './components/Header'
 import Banner from './components/Banner'
 import About from './components/About'
 import Relationships from './components/Relationships'
 import Requirements from './components/Requirements'
 import Users from './components/Users'
 import SignUp from './components/SignUp'
-import AppFooter from './components/AppFooter'
+import AppFooter from './components/Footer'
 
 export default {
   name: 'App',

@@ -4,7 +4,6 @@
         <img class="toolbar__logo" src="../assets/logo/logo.svg">
         <nav class="toolbar__nav nav">
           <a
-            flat
             v-for="link of links"
             :key="link"
             class="nav__link"

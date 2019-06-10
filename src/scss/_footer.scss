@@ -1,0 +1,116 @@
+.footer {
+    display: flex;
+    justify-content: center;
+    background-color: $footerBgColor;
+
+    &__container {
+        width: 930px;
+    }
+
+    &__toolbar {
+        box-sizing: border-box;
+        height: 84px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__nav {
+        display: flex;
+        justify-content: space-between;
+        width: 455px;
+    }
+
+    &__toolbar-link,
+    &__link {
+        text-decoration: none;
+        color: white;
+        font: 16px 'Source Sans Pro', sans-serif;
+    }
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-top: 1px solid $footerBorderColor;
+        margin-top: 1px;
+    }
+
+    &__contact-block {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        height: 50px;
+    }
+
+    &__contact-block:nth-child(1) {
+        padding: 27px 0 0 1px;
+    }
+
+    &__contact-block:nth-child(2) {
+        padding: 12px 0 0 3px;
+    }
+
+    &__contact-block:nth-child(3) {
+        padding: 1px 0 0 5px;
+    }
+
+    &__contact-text {
+        display: inline-block;
+        margin-bottom: 0;
+        margin-block-start: 0;
+        margin-block-end: 0;
+        padding: 0 0 2px 9px;
+        font: 20px 'Source Sans Pro', sans-serif;
+        color: white;
+    }
+
+    &__phone1 {
+        padding-left: 12px;
+    }
+
+    &__phone2 {
+        padding-left: 14px;
+    }
+
+    &__links {
+        display: flex;
+        justify-content: space-between;
+        width: 640px;
+        height: 100px;
+    }
+
+    &__column {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: right;
+        width: 25%;
+        height: 111px;
+        padding-top: 1px;
+    }
+
+    &__social {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding-top: 22px;
+        height: 78px;
+    }
+
+    &__copyright {
+        display: inline-block;
+        margin-bottom: 0;
+        margin-block-start: 0;
+        margin-block-end: 0;
+        padding-top: 10px;
+        color: white;
+        font: 12px 'Source Sans Pro', sans-serif;
+    }
+
+    &__icons {
+        display: flex;
+        justify-content: space-between;
+        width: 210px;
+    }
+}
